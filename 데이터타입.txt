@@ -15,3 +15,25 @@ let somthing; //undefined variable은 인지했지만 값이 없는것
 //배열
 const toBuy = ["potato" , "tomato" , "pizza"]; //배열의 시작은 0 tomato를 불러오고싶으면 1을 입력해야함
 toBuy.push("kimbab");//toBuy배열에 마지막에 추가하기
+
+//오브젝트 배열로 하나하나 선언하면 뭐가 뭔지 모를 수 있기 때문에 오브젝트로 뭐가 뭔지 이해하기편하게함
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,
+};
+
+console.log(player);
+player.lastName= "potato";
+console.log(player);
+
+//function에 데이터 보내기
+const player = {
+    name: "nico",
+    sayHello: function(otherPersonsName){
+        console.log("hello! " + otherPersonsName);
+    },
+};
+
+console.log(player.name);
+player.sayHello("lynn");
